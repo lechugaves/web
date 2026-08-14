@@ -8,7 +8,8 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "deploy": "wrangler deploy"
   },
   "repository": {
     "type": "git",
@@ -22,5 +23,8 @@
   "homepage": "https://lechugaves.com",
   "dependencies": {
     "astro": "^7.2.2"
+  },
+  "devDependencies": {
+    "wrangler": "^4.123.0"
   }
 }
