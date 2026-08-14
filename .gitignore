@@ -1,0 +1,29 @@
+# Dependencies
+node_modules/
+
+# Astro
+.astro/
+dist/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Cloudflare
+.wrangler/
+.dev.vars
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Editors
+.idea/
+.vscode/
+
+# Operating system
+.DS_Store
+Thumbs.db
