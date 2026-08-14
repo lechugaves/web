@@ -1,0 +1,94 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url("/fonts/OpenSans-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("/fonts/OpenSans-SemiBoldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("/fonts/OpenSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("/fonts/OpenSans-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #FFF;
+}
+
+main {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  box-sizing: border-box;
+}
+
+.tagline {
+  width: 100%;
+  margin: 0;
+  padding: 1rem 1.5rem;
+  color: #5b6698;
+  background-color: #f3f4f6;
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  font-weight: 600;
+  font-style: normal;
+  line-height: 1.6;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.tagline span {
+  font-weight: 600;
+  font-style: italic;
+}
+
+.wordmark {
+  width: 100%;
+  padding: 1rem;
+  background-color: #242b8c;
+  box-sizing: border-box;
+}
+
+h1 {
+  margin: 0;
+  color: #FFF;
+  font-family: "Open Sans", sans-serif;
+  font-size: clamp(2rem, 8vw, 4rem);
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+}
+
+h1 span {
+  color: #7ed957;
+  font-style: italic;
+}
