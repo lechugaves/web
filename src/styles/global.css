@@ -36,9 +36,12 @@
   --brand-red: #ff264d;
   --brand-blue: #242b8c;
   --brand-black: #231f20;
+
+  --text-primary: #525252;
+  --text-secondary: #5b6698;
+
   --white: #ffffff;
   --surface-light: #f5f7ff;
-  --text-secondary: #5b6698;
 }
 
 html,
@@ -185,7 +188,7 @@ body {
 
 .landing-hero__title {
   margin: 0;
-  color: var(--brand-black);
+  color: var(--text-primary);
   font-size: clamp(2.5rem, 6vw, 4.5rem);
   font-weight: 700;
   line-height: 1.05;
@@ -258,7 +261,7 @@ body {
 
 .landing-features__title {
   margin: 0;
-  color: var(--brand-black);
+  color: var(--text-primary);
   font-size: clamp(2rem, 5vw, 3.25rem);
   font-weight: 700;
   line-height: 1.15;
@@ -296,7 +299,7 @@ body {
 
 .feature-card__title {
   margin: 0;
-  color: var(--brand-black);
+  color: var(--text-primary);
   font-size: 1.35rem;
   font-weight: 700;
 }
@@ -338,7 +341,7 @@ body {
 
 .app-preview__title {
   margin: 0;
-  color: var(--brand-black);
+  color: var(--text-primary);
   font-size: clamp(2rem, 5vw, 3.25rem);
   font-weight: 700;
   line-height: 1.15;
@@ -465,7 +468,7 @@ body {
 }
 
 .platform-badge__name {
-  color: var(--brand-black);
+  color: var(--text-primary);
   font-size: 1rem;
   font-weight: 700;
 }
@@ -512,7 +515,7 @@ body {
 
 .landing-faq__title {
   margin: 0;
-  color: var(--brand-black);
+  color: var(--text-primary);
   font-size: clamp(2rem, 5vw, 3.25rem);
   font-weight: 700;
   line-height: 1.15;
@@ -530,7 +533,7 @@ body {
 .faq-item__question {
   position: relative;
   padding: 1.5rem 2.5rem 1.5rem 0;
-  color: var(--brand-black);
+  color: var(--text-primary);
   font-size: 1.05rem;
   font-weight: 700;
   line-height: 1.5;
