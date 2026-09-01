@@ -70,7 +70,16 @@ body {
 #app,
 #download,
 #faq {
-  scroll-margin-top: 5rem;
+  scroll-margin-top: 4rem;
+}
+
+@media (max-width: 42rem) {
+  #features,
+  #app,
+  #download,
+  #faq {
+    scroll-margin-top: 4rem;
+  }
 }
 
 .site-header {
@@ -313,7 +322,7 @@ body {
   gap: clamp(3rem, 7vw, 6rem);
   max-width: 72rem;
   margin: 0 auto;
-  padding: clamp(4rem, 8vw, 7rem) 1.5rem;
+  padding: 2.5rem 1.5rem 3.5rem;
 }
 
 .app-preview__content {
@@ -345,13 +354,24 @@ body {
 
 .app-preview__screens {
   position: relative;
-  min-height: 34rem;
+  min-height: 31rem;
 }
 
 .app-preview__screen {
   position: absolute;
-  width: min(52%, 18rem);
+  width: min(46%, 14rem);
   margin: 0;
+}
+
+.app-preview__screen--light {
+  top: 2rem;
+  left: 6%;
+  z-index: 2;
+}
+
+.app-preview__screen--dark {
+  top: 0;
+  right: 6%;
 }
 
 .app-preview__screen img {
@@ -360,17 +380,6 @@ body {
   height: auto;
   border-radius: 1.5rem;
   box-shadow: 0 1.5rem 4rem rgb(35 31 32 / 18%);
-}
-
-.app-preview__screen--light {
-  top: 0;
-  left: 4%;
-  z-index: 2;
-}
-
-.app-preview__screen--dark {
-  right: 4%;
-  bottom: 0;
 }
 
 @media (max-width: 48rem) {
@@ -609,10 +618,10 @@ body {
   }
 
   .landing-header__brand img {
-    width: 9rem;
+    width: 8.5rem;
   }
 
   .landing-header__inner {
-    padding: 0.9rem 1.5rem;
+    padding: 0.65rem 1.25rem;
   }
 }
