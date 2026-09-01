@@ -30,6 +30,17 @@
   font-display: swap;
 }
 
+:root {
+  --brand-green: #00b241;
+  --brand-yellow: #ffcc33;
+  --brand-red: #ff264d;
+  --brand-blue: #242b8c;
+  --brand-black: #231f20;
+  --white: #ffffff;
+  --surface-light: #f5f7ff;
+  --text-secondary: #5b6698;
+}
+
 html,
 body {
   margin: 0;
@@ -38,7 +49,7 @@ body {
 
 body {
   font-family: "Open Sans", sans-serif;
-  background-color: #FFF;
+  background-color: var(--white);
 }
 
 main {
@@ -46,49 +57,43 @@ main {
   min-height: 100dvh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  gap: 0;
+  background-color: var(--white);
   box-sizing: border-box;
 }
 
-.tagline {
+.hero {
+  display: flex;
+  justify-content: center;
   width: 100%;
-  margin: 0;
-  padding: 1rem 1.5rem;
-  color: #5b6698;
-  background-color: #f3f4f6;
-  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  padding: 1.25rem 1.5rem;
+  background-color: var(--brand-blue);
+  box-sizing: border-box;
+}
+
+.logo {
+  display: block;
+  width: min(75vw, 26rem);
+  height: auto;
+}
+
+.intro {
+  width: 100%;
+  background-color: var(--surface-light);
+}
+
+.tagline {
+  max-width: 44rem;
+  margin: 0 auto;
+  padding: 0.9rem 1.5rem;
+  color: var(--text-secondary);
+  font-size: clamp(1rem, 2vw, 1.15rem);
   font-weight: 600;
-  font-style: normal;
   line-height: 1.6;
   text-align: center;
   box-sizing: border-box;
 }
 
 .tagline span {
-  font-weight: 600;
-  font-style: italic;
-}
-
-.wordmark {
-  width: 100%;
-  padding: 1rem;
-  background-color: #242b8c;
-  box-sizing: border-box;
-}
-
-h1 {
-  margin: 0;
-  color: #FFF;
-  font-family: "Open Sans", sans-serif;
-  font-size: clamp(2rem, 8vw, 4rem);
-  font-weight: 700;
-  font-style: normal;
-  text-align: center;
-}
-
-h1 span {
-  color: #7ed957;
   font-style: italic;
 }
