@@ -357,3 +357,86 @@ body {
     right: 8%;
   }
 }
+
+.landing-download {
+  padding: clamp(4rem, 8vw, 7rem) 1.5rem;
+}
+
+.landing-download__content {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: clamp(3rem, 7vw, 5rem);
+  background-color: var(--brand-blue);
+  border-radius: 2rem;
+  text-align: center;
+}
+
+.landing-download__eyebrow {
+  margin: 0 0 0.75rem;
+  color: var(--brand-yellow);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.landing-download__title {
+  margin: 0;
+  color: var(--white);
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.landing-download__description {
+  max-width: 42rem;
+  margin: 1.25rem auto 0;
+  color: var(--white);
+  font-size: clamp(1rem, 2vw, 1.1rem);
+  font-weight: 600;
+  line-height: 1.7;
+}
+
+.landing-download__platforms {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.platform-badge {
+  display: flex;
+  flex-direction: column;
+  min-width: 9rem;
+  padding: 0.9rem 1.25rem;
+  background-color: var(--white);
+  border-radius: 0.9rem;
+}
+
+.platform-badge__name {
+  color: var(--brand-black);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.platform-badge__status {
+  margin-top: 0.15rem;
+  color: var(--text-secondary);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+@media (max-width: 36rem) {
+  .landing-download__content {
+    padding: 3rem 1.5rem;
+    border-radius: 1.5rem;
+  }
+
+  .landing-download__platforms {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .platform-badge {
+    min-width: 0;
+  }
+}
