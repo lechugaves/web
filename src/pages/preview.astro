@@ -1,0 +1,27 @@
+---
+import AppPreview from "../components/landing/AppPreview.astro";
+import Download from "../components/landing/Download.astro";
+import FAQ from "../components/landing/FAQ.astro";
+import Features from "../components/landing/Features.astro";
+import Hero from "../components/landing/Hero.astro";
+import LandingHeader from "../components/landing/LandingHeader.astro";
+import Footer from "../components/Footer.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  title="LechugaVES"
+  description="Consulta tasas del dólar y el euro frente al bolívar venezolano y realiza conversiones desde LechugaVES."
+>
+  <LandingHeader />
+
+  <main>
+    <Hero />
+    <Features />
+    <AppPreview />
+    <Download />
+    <FAQ />
+  </main>
+
+  <Footer />
+</BaseLayout>
