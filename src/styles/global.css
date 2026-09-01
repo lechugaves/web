@@ -52,7 +52,7 @@ body {
   background-color: var(--white);
 }
 
-main {
+.coming-soon {
   min-height: 100vh;
   min-height: 100dvh;
   display: flex;
@@ -62,7 +62,7 @@ main {
   box-sizing: border-box;
 }
 
-.hero {
+.site-header {
   display: flex;
   justify-content: center;
   width: 100%;
@@ -71,10 +71,24 @@ main {
   box-sizing: border-box;
 }
 
-.logo {
+.site-logo {
   display: block;
   width: min(75vw, 26rem);
   height: auto;
+}
+
+.site-footer {
+  width: 100%;
+  padding: 1rem 1.5rem;
+  box-sizing: border-box;
+  background-color: var(--white);
+  color: var(--text-secondary);
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.site-footer p {
+  margin: 0;
 }
 
 .intro {

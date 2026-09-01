@@ -1,41 +1,17 @@
 ---
-import "../styles/global.css";
+import Header from "../components/Header.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
-<!doctype html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1"
-    />
-    <meta
-      name="description"
-      content="LechugaVES te ayuda a consultar y convertir tasas de cambio entre divisas y el bolívar venezolano."
-    />
+<BaseLayout>
+  <main class="coming-soon">
+    <Header />
 
-    <link rel="icon" type="image/png" href="/favicon.png" />
-
-    <title>LechugaVES</title>
-  </head>
-
-  <body>
-    <main>
-      <section class="hero">
-        <img
-          class="logo"
-          src="/branding/logo-horizontal-white.svg"
-          alt="LechugaVES"
-        />
-      </section>
-
-      <section class="intro">
-        <p class="tagline">
-          Próximamente, una nueva forma de consultar las tasas de cambio entre
-          distintas divisas y el bolívar venezolano (<span>VES</span>).
-        </p>
-      </section>
-    </main>
-  </body>
-</html>
+    <section class="intro">
+      <p class="tagline">
+        Próximamente, una nueva forma de consultar las tasas de cambio entre
+        distintas divisas y el bolívar venezolano (<span>VES</span>).
+      </p>
+    </section>
+  </main>
+</BaseLayout>
