@@ -47,6 +47,10 @@ body {
   min-height: 100%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   background-color: var(--white);
@@ -60,6 +64,13 @@ body {
   justify-content: center;
   background-color: var(--white);
   box-sizing: border-box;
+}
+
+#features,
+#app,
+#download,
+#faq {
+  scroll-margin-top: 5rem;
 }
 
 .site-header {
@@ -173,6 +184,8 @@ body {
 @media (max-width: 48rem) {
   .landing-hero {
     grid-template-columns: 1fr;
+    gap: 2.5rem;
+    padding: 3rem 1.5rem 4rem;
     text-align: center;
   }
 
@@ -182,7 +195,7 @@ body {
   }
 
   .landing-hero__preview img {
-    max-width: 17rem;
+    max-width: 15rem;
   }
 }
 
@@ -512,4 +525,64 @@ body {
   font-size: 0.95rem;
   font-weight: 600;
   line-height: 1.7;
+}
+
+.landing-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: var(--brand-blue);
+  border-bottom: 1px solid rgb(255 255 255 / 12%);
+}
+
+.landing-header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+}
+
+.landing-header__brand {
+  display: block;
+  flex-shrink: 0;
+}
+
+.landing-header__brand img {
+  display: block;
+  width: 10rem;
+  height: auto;
+}
+
+.landing-header__nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.landing-header__nav a {
+  color: var(--white);
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.landing-header__nav a:hover {
+  color: var(--brand-yellow);
+}
+
+@media (max-width: 42rem) {
+  .landing-header__nav {
+    display: none;
+  }
+
+  .landing-header__brand img {
+    width: 9rem;
+  }
+
+  .landing-header__inner {
+    padding: 0.9rem 1.5rem;
+  }
 }
