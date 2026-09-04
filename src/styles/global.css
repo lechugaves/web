@@ -130,6 +130,24 @@ body {
   line-height: 1.6;
 }
 
+.site-footer__meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.75rem;
+}
+
+.site-footer__meta a {
+  color: rgb(255 255 255 / 72%);
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.site-footer__meta a:hover {
+  color: var(--brand-yellow);
+}
+
 .site-footer__meta p {
   margin: 0;
   color: rgb(255 255 255 / 64%);
@@ -140,6 +158,10 @@ body {
 @media (max-width: 42rem) {
   .site-footer__inner {
     flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .site-footer__meta {
     align-items: flex-start;
   }
 }
@@ -627,4 +649,82 @@ body {
   .landing-header__inner {
     padding: 0.65rem 1.25rem;
   }
+}
+
+.privacy {
+  padding: clamp(3rem, 7vw, 6rem) 1.5rem;
+  background-color: var(--white);
+}
+
+.privacy__content {
+  max-width: 48rem;
+  margin: 0 auto;
+  color: var(--text-secondary);
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.8;
+}
+
+.privacy__header {
+  padding-bottom: 0.5rem;
+  border-bottom: 0.2rem solid var(--surface-light);
+  margin-bottom: 1rem;
+}
+
+.privacy__eyebrow {
+  margin: 0 0 0.75rem;
+  color: var(--brand-green);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.privacy__header h1 {
+  margin: 0;
+  color: var(--text-primary);
+  font-size: clamp(2.25rem, 5vw, 3.5rem);
+  font-weight: 700;
+  line-height: 1.15;
+  
+}
+
+.privacy__updated {
+  margin: 1rem 0 0;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.privacy__content section {
+  margin-top: 2.5rem;
+}
+
+.privacy__content h2 {
+  margin: 0 0 1rem;
+  color: var(--text-primary);
+  font-size: 1.35rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.privacy__content p {
+  margin: 1rem 0 0;
+}
+
+.privacy__content ul {
+  margin: 1rem 0 0;
+  padding-left: 1.5rem;
+}
+
+.privacy__content li + li {
+  margin-top: 0.5rem;
+}
+
+.privacy__content a {
+  color: var(--brand-blue);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 0.2rem;
+}
+
+.privacy__content a:hover {
+  color: var(--brand-green);
 }
