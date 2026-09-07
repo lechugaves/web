@@ -939,8 +939,15 @@ body {
 }
 
 .glossary-calculations {
-  margin-top: 2rem;
+  margin-top: 0;
   border-top: 1px solid rgb(91 102 152 / 18%);
+}
+
+.glossary-calculations__intro {
+  margin: 0.5rem 0 1.5rem;
+  color: var(--text-secondary);
+  font-size: 1rem;
+  line-height: 1.7;
 }
 
 .glossary-calculation {
