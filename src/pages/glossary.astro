@@ -1,0 +1,253 @@
+---
+import Footer from "../components/Footer.astro";
+import LandingHeader from "../components/landing/LandingHeader.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  title="Glosario | LechugaVES"
+  description="Consulta el significado de monedas, símbolos y referencias utilizadas en LechugaVES, y conoce cómo calculamos USDT/VES, EURI/VES y PROM."
+>
+  <LandingHeader />
+
+  <main class="glossary-page">
+    <section class="glossary-page__hero" aria-labelledby="glossary-title">
+      <p class="glossary-page__eyebrow">Glosario</p>
+
+      <h1 id="glossary-title" class="glossary-page__title">
+        Entiende las referencias que mostramos.
+      </h1>
+
+      <p class="glossary-page__description">
+        Aquí encontrarás el significado de las monedas, símbolos y referencias
+        utilizadas en LechugaVES, además de una explicación de cómo calculamos
+        algunos valores mostrados en la aplicación.
+      </p>
+    </section>
+
+    <section class="glossary-page__section" aria-labelledby="terms-title">
+      <h2 id="terms-title">Monedas, símbolos y referencias</h2>
+
+      <div class="glossary-table-wrapper">
+        <table class="glossary-table">
+          <thead>
+            <tr>
+              <th scope="col">Término</th>
+              <th scope="col">Tipo</th>
+              <th scope="col">Significado</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Bs.</th>
+              <td>Símbolo</td>
+              <td>Símbolo utilizado para representar el bolívar.</td>
+            </tr>
+            <tr>
+              <th scope="row">VES</th>
+              <td>Moneda</td>
+              <td>Código internacional ISO 4217 del bolívar.</td>
+            </tr>
+            <tr>
+              <th scope="row">BCV</th>
+              <td>Referencia</td>
+              <td>
+                Acrónimo de <b>B</b>anco <b>C</b>entral de <b>V</b>enezuela. Lo
+                usamos para identificar la referencia oficial de la tasa de
+                cambio.
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">$</th>
+              <td>Símbolo</td>
+              <td
+                >Símbolo utilizado para representar el dólar estadounidense.</td
+              >
+            </tr>
+            <tr>
+              <th scope="row">USD</th>
+              <td>Moneda</td>
+              <td>Código internacional ISO 4217 del dólar estadounidense.</td>
+            </tr>
+            <tr>
+              <th scope="row">USDT</th>
+              <td>Stablecoin</td>
+              <td>
+                Stablecoin diseñada para mantener un valor cercano a un dólar
+                estadounidense.
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">€</th>
+              <td>Símbolo</td>
+              <td>Símbolo utilizado para representar el euro.</td>
+            </tr>
+            <tr>
+              <th scope="row">EUR</th>
+              <td>Moneda</td>
+              <td>Código internacional ISO 4217 del euro.</td>
+            </tr>
+            <tr>
+              <th scope="row">EURI</th>
+              <td>Stablecoin</td>
+              <td>
+                Stablecoin diseñada para mantener un valor cercano a un euro.
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">PROM</th>
+              <td>Referencia</td>
+              <td>
+                Promedio entre la referencia de mercado y la tasa oficial del
+                BCV.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="glossary__note">
+        <strong class="glossary__note-title">¿Qué es una stablecoin?</strong>
+        <p>
+          Una stablecoin es un activo digital diseñado para mantener un valor
+          estable tomando como referencia otro activo, como una moneda.
+        </p>
+        <p>
+          En LechugaVES, utilizamos <strong>USDT</strong> vinculada al dólar
+          estadounidense, y <strong>EURI</strong> vinculada al euro, como
+          referencias para algunos de nuestros cálculos.
+        </p>
+      </div>
+    </section>
+
+    <section
+      class="glossary-page__section"
+      aria-labelledby="calculations-title"
+    >
+      <h2 id="calculations-title">Cómo calculamos las referencias</h2>
+
+      <div class="glossary-calculations">
+        <article class="glossary-calculation">
+          <div class="glossary-calculation__header">
+            <span class="glossary-calculation__index">01</span>
+
+            <div>
+              <h3>USDT/VES</h3>
+              <p>
+                Recolectamos las cotizaciones disponibles en el mercado y
+                calculamos la mediana.
+              </p>
+              <p>
+                Este método ayuda a reducir la influencia de valores extremos.
+              </p>
+            </div>
+          </div>
+
+          <div class="glossary-calculation__detail">
+            <p class="glossary-calculation__label">Ejemplo</p>
+            <p>
+              Si las cotizaciones disponibles en el mercado fueran:<br />
+              Cotizaciones: <strong>100, 105, 106, 107 y 120</strong>.
+              <br />
+              La mediana sería: <strong>106</strong>.
+            </p>
+            <p class="glossary-calculation__label">Otro ejemplo</p>
+            <p>
+              Si las cotizaciones disponibles en el mercado fueran:<br />
+              Cotizaciones: <strong>100, 105, 106, 107, 108 y 120</strong>.
+              <br />
+              La mediana sería: <strong>106,50</strong>.
+            </p>
+          </div>
+        </article>
+
+        <article class="glossary-calculation">
+          <div class="glossary-calculation__header">
+            <span class="glossary-calculation__index">02</span>
+
+            <div>
+              <h3>EURI/VES</h3>
+              <p>
+                Utilizamos la referencia USDT/VES y la relación EUR/USD.
+              </p>
+              <p>
+                Esta referencia es calculada por LechugaVES y no corresponde a
+                una cotización directa de mercado.
+              </p>
+            </div>
+          </div>
+
+          <div class="glossary-calculation__detail">
+            <p class="glossary-calculation__label">Cálculo</p>
+            <p class="glossary-calculation__formula">
+              EURI/VES = USDT/VES × EUR/USD
+            </p>
+            <p>
+              Por ejemplo:<br />
+              USDT/VES = <strong>100</strong> y EUR/USD = <strong>1,20</strong
+              ><br />
+              EURI/VES = 100 × 1,20 = <strong>120</strong>.
+            </p>
+          </div>
+        </article>
+
+        <article class="glossary-calculation">
+          <div class="glossary-calculation__header">
+            <span class="glossary-calculation__index">03</span>
+
+            <div>
+              <h3>PROM</h3>
+              <p>
+                Representa el promedio entre la referencia de mercado y la tasa
+                oficial publicada por el Banco Central de Venezuela.
+              </p>
+              <p>
+                Es un valor informativo calculado por LechugaVES; no representa
+                una tasa oficial ni una cotización directa de mercado.
+              </p>
+            </div>
+          </div>
+
+          <div class="glossary-calculation__detail">
+            <p class="glossary-calculation__label">Cálculo</p>
+            <p class="glossary-calculation__formula">
+              PROM = (Mercado + BCV) / 2
+            </p>
+            <p>
+              Por ejemplo:<br />
+              Mercado = <strong>100</strong> y BCV = <strong>90</strong><br />
+              PROM = (100 + 90) / 2 = <strong>95</strong>.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="glossary-page__section">
+      <div class="glossary__name">
+        <p class="glossary__name-eyebrow">¿Por qué LechugaVES?</p>
+
+        <div class="glossary__name-grid">
+          <div>
+            <h2>Lechuga</h2>
+            <p>
+              En Venezuela, “lechuga” se usaba coloquialmente para referirse al
+              dólar estadounidense.
+            </p>
+          </div>
+
+          <div>
+            <h2>VES</h2>
+            <p>Es el código ISO 4217 correspondiente al bolívar venezolano.</p>
+          </div>
+        </div>
+
+        <p class="glossary__name-summary">
+          LechugaVES combina ambos conceptos: una expresión cotidiana asociada
+          al dólar en Venezuela y el código de la moneda oficial del país.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</BaseLayout>

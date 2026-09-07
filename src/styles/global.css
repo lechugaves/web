@@ -728,3 +728,288 @@ body {
 .privacy__content a:hover {
   color: var(--brand-green);
 }
+
+/* Glossary Page */
+
+.glossary-page {
+  background-color: var(--surface-light);
+}
+
+.glossary-page__hero {
+  max-width: 56rem;
+  margin: 0 auto;
+  padding: clamp(4rem, 8vw, 7rem) 1.5rem 3rem;
+  text-align: center;
+}
+
+.glossary-page__eyebrow {
+  margin: 0 0 0.75rem;
+  color: var(--brand-green);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.glossary-page__title {
+  margin: 0;
+  color: var(--text-primary);
+  font-size: clamp(2.25rem, 6vw, 4rem);
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.glossary-page__description {
+  margin: 1.25rem 0 0;
+  color: var(--text-secondary);
+  font-size: clamp(1rem, 2vw, 1.1rem);
+  font-weight: 600;
+  line-height: 1.7;
+}
+
+.glossary-page__section {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 4rem;
+}
+
+.glossary-page__section > h2 {
+  margin: 0;
+  color: var(--text-primary);
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  font-weight: 700;
+}
+
+.glossary__name {
+  margin-top: 2rem;
+  padding: clamp(2rem, 5vw, 3rem);
+  background-color: var(--brand-blue);
+  border-radius: 1.5rem;
+}
+
+.glossary__name-eyebrow {
+  margin: 0;
+  color: var(--brand-yellow);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.glossary__name-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.glossary__name h2 {
+  margin: 0;
+  color: var(--white);
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.glossary__name p {
+  color: rgb(255 255 255 / 82%);
+  font-weight: 600;
+  line-height: 1.7;
+}
+
+.glossary__name-grid p {
+  margin: 0.75rem 0 0;
+}
+
+.glossary__name-summary {
+  margin: 2rem 0 0;
+}
+
+.glossary__note {
+  margin-top: 1rem;
+  padding: 1.25rem 1.5rem;
+  background-color: var(--white);
+  border-left: 0.25rem solid var(--brand-yellow);
+  border-radius: 0.75rem;
+}
+
+.glossary__note-title {
+  display: block;
+  color: var(--text-primary);
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.glossary__note p {
+  margin: 0.5rem 0 0;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1.7;
+}
+
+.glossary__note p strong {
+  display: inline;
+  color: var(--text-primary);
+  font-size: inherit;
+  font-weight: 700;
+}
+
+@media (max-width: 48rem) {
+  .glossary__name-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.glossary-table-wrapper {
+  margin-top: 2rem;
+  overflow-x: auto;
+  background-color: var(--white);
+  border-radius: 1rem;
+}
+
+.glossary-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.glossary-table th,
+.glossary-table td {
+  padding: 1.1rem 1.25rem;
+  border-bottom: 1px solid rgb(91 102 152 / 14%);
+  text-align: left;
+  vertical-align: top;
+}
+
+.glossary-table thead th {
+  color: var(--text-primary);
+  background-color: rgb(36 43 140 / 6%);
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.glossary-table tbody th {
+  width: 5rem;
+  color: var(--brand-blue);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.glossary-table tbody td {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+.glossary-table tbody td:nth-child(2) {
+  width: 8rem;
+  color: var(--text-primary);
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.glossary-table tbody tr:last-child th,
+.glossary-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+@media (max-width: 48rem) {
+  .glossary-table {
+    table-layout: fixed;
+  }
+
+  .glossary-table th,
+  .glossary-table td {
+    padding: 0.85rem 0.6rem;
+  }
+
+  .glossary-table th:nth-child(1) {
+    width: 3.5rem;
+  }
+
+  .glossary-table th:nth-child(2) {
+    width: 4.5rem;
+  }
+}
+
+.glossary-calculations {
+  margin-top: 2rem;
+  border-top: 1px solid rgb(91 102 152 / 18%);
+}
+
+.glossary-calculation {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(18rem, 0.8fr);
+  gap: clamp(2rem, 5vw, 4rem);
+  padding: 2.5rem 0;
+  border-bottom: 1px solid rgb(91 102 152 / 18%);
+}
+
+.glossary-calculation__header {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+}
+
+.glossary-calculation__index {
+  flex-shrink: 0;
+  color: var(--brand-green);
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.glossary-calculation h3 {
+  margin: 0;
+  color: var(--text-primary);
+  font-size: 1.35rem;
+  font-weight: 700;
+}
+
+.glossary-calculation__header p {
+  margin: 0.75rem 0 0;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.7;
+}
+
+.glossary-calculation__detail {
+  padding: 1.25rem 1.5rem;
+  background-color: var(--white);
+  border-radius: 0.75rem;
+}
+
+.glossary-calculation__detail p {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1.7;
+}
+
+.glossary-calculation__detail p + p {
+  margin-top: 0.75rem;
+}
+
+.glossary-calculation__detail strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.glossary-calculation__label {
+  color: var(--brand-green) !important;
+  font-size: 0.75rem !important;
+  font-weight: 700 !important;
+  text-transform: uppercase;
+}
+
+.glossary-calculation__formula {
+  color: var(--text-primary) !important;
+  font-size: 1rem !important;
+  font-weight: 700 !important;
+}
+
+@media (max-width: 48rem) {
+  .glossary-calculation {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    padding: 2rem 0;
+  }
+}
