@@ -591,6 +591,15 @@ body {
   line-height: 1.7;
 }
 
+.faq-item__answer a {
+  color: var(--text-secondary);
+  text-decoration: underline;
+}
+
+.faq-item__answer a:hover {
+  color: var(--brand-green);
+}
+
 .landing-header {
   position: sticky;
   top: 0;
