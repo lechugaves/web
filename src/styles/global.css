@@ -259,6 +259,10 @@ body {
   font-weight: 700;
 }
 
+.landing-hero__availability a {
+  color: var(--brand-blue);
+}
+
 .landing-hero__preview {
   display: flex;
   flex-direction: column;
