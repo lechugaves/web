@@ -259,6 +259,10 @@ body {
   font-weight: 700;
 }
 
+.landing-hero__availability a {
+  color: var(--brand-blue);
+}
+
 .landing-hero__preview {
   display: flex;
   flex-direction: column;
@@ -537,31 +541,22 @@ body {
 .landing-download__platforms {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
   gap: 1rem;
   margin-top: 2rem;
 }
 
-.platform-badge {
-  display: flex;
-  flex-direction: column;
-  min-width: 9rem;
-  padding: 0.9rem 1.25rem;
-  background-color: var(--white);
-  border-radius: 0.9rem;
+.landing-download__platforms a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.platform-badge__name {
-  color: var(--text-primary);
-  font-size: 1rem;
-  font-weight: 700;
-}
-
-.platform-badge__status {
-  margin-top: 0.15rem;
-  color: var(--text-secondary);
-  font-size: 0.8rem;
-  font-weight: 600;
+.landing-download__platforms img {
+  display: block;
+  width: auto;
+  height: 48px;
 }
 
 @media (max-width: 36rem) {
@@ -572,11 +567,7 @@ body {
 
   .landing-download__platforms {
     flex-direction: column;
-    align-items: stretch;
-  }
-
-  .platform-badge {
-    min-width: 0;
+    align-items: center;
   }
 }
 
